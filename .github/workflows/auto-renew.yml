@@ -9,8 +9,8 @@ permissions:
   contents: write 
 
 jobs:
-  Auto_renew_tickhosting:
-    runs-on: windows-latest 
+  Auto_renew_flaminghosting:
+    runs-on: ubuntu
     
     steps:
     - name: Checkout repository
@@ -38,7 +38,7 @@ jobs:
         pip install -r requirements.txt
 
     - name: Set up WARP
-      uses: fscarmen/warp-on-actions@v1.2
+      uses: fscarmen/warp-on-actions@v1.3
       with:
         stack: dual   # Optional. Support [ ipv4, ipv6, dual ]. Default is dual.
         
