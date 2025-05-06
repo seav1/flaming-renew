@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   Auto_renew_flaminghosting:
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-20.04
     
     steps:
     - name: Checkout repository
