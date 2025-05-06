@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   Auto_renew_flaminghosting:
-    runs-on: ubuntu
+    runs-on: windows-latest
     
     steps:
     - name: Checkout repository
@@ -37,11 +37,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Set up WARP
-      uses: fscarmen/warp-on-actions@v1.3
-      with:
-        stack: dual   # Optional. Support [ ipv4, ipv6, dual ]. Default is dual.
-        
     - name: Run auto renew script
       env:
         EMAIL: ${{ secrets.EMAIL }}
