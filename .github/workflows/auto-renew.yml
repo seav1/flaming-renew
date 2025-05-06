@@ -1,4 +1,4 @@
-name: Auto Renew Tickhosting
+name: Auto Renew flaminghosting
 
 on:
   schedule:
